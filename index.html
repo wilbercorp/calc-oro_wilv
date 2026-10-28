@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Calc Gold</title>
+    <title>Calc Gold by wilv</title>
     
-    <!-- ETIQUETAS DE APPLE PARA SIMULAR APP INSTALADA -->
+  
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Calc Gold">
     <link rel="apple-touch-icon" href="icono.png">
 
     <style>
-        /* FONDO PRINCIPAL DE LA PÁGINA (EXTERIOR) */
+        
         body {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://i.pinimg.com/1200x/8e/2f/09/8e2f09e9448547b4e3a4bf35a2f4559c.jpg');
             background-size: cover;
@@ -30,13 +30,13 @@
             box-sizing: border-box;
         }
 
-        /* CONTENEDOR DE LA CALCULADORA CON SU PROPIO FONDO INTERNO CAMBIABLE */
+        
         .container {
             width: 100%;
             max-width: 380px; 
             padding: 25px 20px;
             
-            /* REEMPLAZA EL ENLACE DE ABAJO POR LA URL DE LA IMAGEN QUE TU DESEES */
+           
             background-image: linear-gradient(rgba(20, 20, 20, 0.20), rgba(20, 20, 20, 0.20)), url('https://i.pinimg.com/736x/63/2c/15/632c159eef093e0be44e91070dd23fbf.jpg');
             background-size: cover;
             background-position: center;
@@ -72,7 +72,7 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
         }
 
-        /* CUADROS DE ENTRADA */
+       
         input[type="number"] {
             width: 100%;
             box-sizing: border-box;
@@ -93,7 +93,7 @@
             margin: 0;
         }
 
-        /* CUADRO DEL TOTAL PRINCIPAL */
+       
         .total-box {
             background-color: rgba(10, 10, 10, 0.95);
             border-radius: 20px;
@@ -127,7 +127,7 @@
             text-align: center;
         }
 
-        /* MINI RECUADROS DE RESULTADOS */
+        
         .res-item {
             background: rgba(15, 15, 15, 0.9);
             padding: 10px;
@@ -206,7 +206,7 @@ function kotlinTrunc(value, decimals) {
     return Math.floor(Math.round(value * factor * 10000000) / 10000000) / factor;
 }
 
-// Separador de millares con comas
+
 function formatearConComas(valor, decimales) {
     return valor.toLocaleString('en-US', {
         minimumFractionDigits: decimales,
